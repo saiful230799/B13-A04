@@ -34,15 +34,17 @@ function renderUI() {
     tabJobsCountEl.innerText = `${filteredJobs.length} jobs`;
 
     if (filteredJobs.length === 0) {
-        jobsContainer.innerHTML = `
-            <div class="flex flex-col items-center justify-center py-10 opacity-60">
-                <img src="../img/Vector.png" class="w-20 mb-4" alt="empty">
-                <h3 class="text-xl font-bold">No jobs Available</h3>
-                <p class="text-sm">You haven't added any jobs to this category yet.</p>
-            </div>
-        `;
-        return;
-    }
+    jobsContainer.innerHTML = `
+        <div class="flex flex-col items-center justify-center py-20 text-center w-full">
+            <img src="../img/Vector.png" class="w-20 mb-4" class="w-24 mb-6 opacity-80" alt="empty">
+            
+            <h2 class="text-3xl font-bold text-[#0D2344]">No jobs available</h2>
+            
+            <p class="text-slate-400 mt-2 text-lg font-medium">Check back soon for new job opportunities</p>
+        </div>
+    `;
+    return;
+}
 
     filteredJobs.forEach(job => {
         const card = document.createElement('div');
