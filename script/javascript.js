@@ -36,7 +36,7 @@ function renderUI() {
     if (filteredJobs.length === 0) {
     jobsContainer.innerHTML = `
         <div class="flex flex-col items-center justify-center py-20 text-center w-full">
-            <img src="../img/Vector.png" class="w-20 mb-4" class="w-24 mb-6 opacity-80" alt="empty">
+            <img src="https://saiful230799.github.io/B13-A04/img/Vector.png" class="w-20 mb-4" class="w-24 mb-6 opacity-80" alt="empty">
             
             <h2 class="text-3xl font-bold text-[#0D2344]">No jobs available</h2>
             
